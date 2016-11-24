@@ -31,8 +31,12 @@
         android:id="@+id/tvMessage"
         android:layout_marginTop="10dp"
 
-        android:lines="6"
-        android:maxLines="10"/>
+    />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"/>
 
 
 </LinearLayout>

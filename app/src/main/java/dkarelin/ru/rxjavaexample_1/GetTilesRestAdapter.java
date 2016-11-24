@@ -14,6 +14,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class GetTilesRestAdapter {
 
+    // http://tile.openstreetmap.org/
     private final static String SERVER_BASE_URL = "http://tile.openstreetmap.org/";
 
     private IDownloadTileRest downloadTileRest;
