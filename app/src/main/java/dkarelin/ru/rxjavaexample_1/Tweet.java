@@ -6,14 +6,14 @@ import com.pushtorefresh.storio.sqlite.annotations.StorIOSQLiteType;
 
 
 
-@StorIOSQLiteType(table = "tweets")
+// @StorIOSQLiteType(table = "tweets")
 public class Tweet {
 
     // annotated fields should have package-level visibility
-    @StorIOSQLiteColumn(name = "author")
+    //@StorIOSQLiteColumn(name = "author")
     String author;
 
-    @StorIOSQLiteColumn(name = "content")
+    //@StorIOSQLiteColumn(name = "content")
     String content;
 
     // please leave default constructor with package-level visibility

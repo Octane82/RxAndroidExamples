@@ -20,6 +20,8 @@ import com.pushtorefresh.storio.sqlite.queries.Query;
 
 import java.util.List;
 
+import dkarelin.ru.rxjavaexample_1.sqlbrite.MainSQLBrite;
+import dkarelin.ru.rxjavaexample_1.storio.MainStorio;
 import rx.Observable;
 import rx.Subscriber;
 import rx.Subscription;
@@ -57,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         // Run RX
-        myObservable.subscribe(mySubscriber);
+        //myObservable.subscribe(mySubscriber);
 
         // ------------------------------------------------------------------
 
@@ -71,9 +73,18 @@ public class MainActivity extends AppCompatActivity {
 
         // Observable.just("yay").subscribe(s -> Log.d(TAG, "STRING: " + s));
 
-        trimAndFilterText();
+        /*trimAndFilterText();
 
-        loginAndPassword();
+        loginAndPassword();*/
+
+        Log.d(TAG, "MAIN onCreate()");
+        /*MainStorio mainStorio = new MainStorio(this);
+        mainStorio.testQueryDb();*/
+
+        MainSQLBrite sqlBrite = new MainSQLBrite(this);
+        sqlBrite.dbExample();
+
+
     }
 
 
